@@ -12,6 +12,12 @@
     font-weight: 700;
 }
 
+@mixin text($font-size){
+    letter-spacing: -.1px;
+    line-height: 1.5;
+    font-size: $font-size;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -39,15 +45,21 @@ section {
 }
 
 .text-size {
-    font-size: 20px;
+    font-size: $fontText;
     letter-spacing: -.1px;
     line-height: 1.6;
 }
 
 .text-size--small {
-    font-size: $fontTextSmall;
-    letter-spacing: -.1px;
-    line-height: 1.5;
+    @include text($fontTextSmall)
+}
+
+.text-size--medium {
+    @include text($fontTextMedium)
+}
+
+.text-color {
+    color: $textColorSecundary;
 }
 
 .app {
@@ -88,7 +100,7 @@ section {
 }
 
 .button {
-    font-size: 15px;
+    font-size: $fontTextMedium;
     font-weight: 900;
     letter-spacing: 1.5px;
     line-height: 1.6;
@@ -106,4 +118,12 @@ section {
     }
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
 @import 'description';
+@import 'details';
+@import 'about';

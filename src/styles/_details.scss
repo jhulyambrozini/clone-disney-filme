@@ -1,0 +1,33 @@
+@import 'variables';
+
+.details {
+    border-bottom: 2px solid rgba(249, 249, 249, 0.2);
+    display: flex;
+    margin-bottom: 10px;
+    z-index: 2;
+
+    &__menu {
+        margin-right: 40px;
+        padding-bottom: 15px;
+        position: relative;
+
+        &::after {
+        background-color: rgb(249, 249, 249);
+        border-radius: 50px 50px 0px 0px;
+        content: "";
+        height: 3px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        }
+
+        p {
+            font-size: $fontText;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+    }
+}
