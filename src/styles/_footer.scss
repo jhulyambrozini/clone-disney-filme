@@ -1,0 +1,45 @@
+@import 'variables';
+
+.footer {
+    margin-top: 100px;
+    background-color: $conatinerColor;
+    position: relative;
+
+    &__logo {
+        padding-top: 18px;
+        width: 94px;
+        margin: 0px auto;
+
+        img {
+            min-width: 80px;
+            height: 48px;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        margin: 0px auto;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-width: 500px;
+
+        p {
+            margin: 10px 5px;
+            padding: 1px 6px;
+        }
+    }
+
+    &__adress {
+        margin: 0 28px;
+        padding: 0;
+        text-align: center;
+    }
+
+    &__copy {
+        p {
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 24px;
+        }
+    }
+}

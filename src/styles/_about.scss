@@ -6,6 +6,15 @@
     visibility: visible;
     z-index: 1;
 
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 769px) {
+            display: block;
+        }
+    }
+
     &__title {
         font-size: $fontTitle;
         letter-spacing: .11px;
@@ -28,6 +37,14 @@
         padding: 12px 0px 0px;
         display: flex;
         flex-direction: row;
+
+        &--flex {
+            flex: 1 1 0%;
+        }
+
+        &--padding {
+            padding-bottom: 16px;
+        }
 
         @media (min-width: 1024px) {
         padding: 0px 0px 0px 12px;

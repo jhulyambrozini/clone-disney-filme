@@ -11,6 +11,21 @@
 </head>
 <body>
     <div class="app">
+        <header class="header">
+            <div class="header__container">
+                <div>
+                    <img class="header__logo" src="./public/images/logo-disney.svg" alt="Disney+">
+                </div>
+                <div class="header__buttons">
+                    <button type="submit" class="button button--primary header__buttons--sing">
+                        Assinar o Disney+
+                    </button>
+                    <button type="submit" class="button header__buttons--login">
+                        Entrar
+                    </button>
+                </div>
+            </div>
+        </header>
         <main>
                 <section>
                     <div class="app__background">
@@ -58,11 +73,11 @@
                 </article>
 
                 <article class="about">
-                    <h1 class="about__title">
+                    <h2 class="about__title">
                         As Crônicas de Nárnia: O Leão, A Feiticeira e o Guarda-Roupa
-                    </h1>
+                    </h2>
 
-                    <div class="grid">
+                    <div class="about__container">
                         <div class="about__desc">
                             <p class="text-size">
                                 "As Crônicas de Nárnia: O Leão, A Feiticeira e o Guarda-Roupa" conta a história das aventuras de quatro irmãos na Inglaterra assolada pela Segunda Guerra Mundial, quando eles entram no mundo de Nárnia através de um guarda-roupa mágico, enquanto brincavam de "esconde-esconde" na casa de campo de um professor idoso. Lá, as crianças descobrem uma terra encantadora e tranquila, porém condenada pela bruxa malvada Jadis a viver num inverno sem fim. Guiadas pelo seu nobre e místico governante, o Deus-leão Aslan, as crianças lutam para anular o poder da bruxa sobre Nárnia numa espetacular batalha final que a libertará do feitiço gelado de Jadis para sempre. Contém referências a tabaco.
@@ -70,7 +85,7 @@
                         </div>
 
                         <div class="about__infos">
-                            <div style="flex: 1 1 0%;">
+                            <div class="about__infos--flex">
                                 <div class="about__infos__desc">
                                     <p class="text-color text-size--medium">Duração:</p>
                                     <p class="text-size--medium">2h 29min</p>
@@ -92,13 +107,13 @@
                                 </div>
                             </div>
 
-                            <div style="flex: 1 1 0%;">
-                                <div style="padding-bottom: 16px;">
+                            <div class="about__infos--flex">
+                                <div class="about__infos--padding">
                                     <p class="text-color text-size--medium">Direção:</p>
                                     <p class="text-size--medium">Andrew Adamson</p>
                                 </div>
 
-                                <div style="padding-bottom: 16px;">
+                                <div class="about__infos--padding">
                                     <p class="text-color text-size--medium">Elenco:</p>
                                     <p class="text-size--medium">Georgie Henley</p>
                                     <p class="text-size--medium">Skandar Keynes</p>
@@ -113,8 +128,32 @@
                 </article>
             </section>
         </main>
-    </div>
 
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="./public/images/logo-disney.svg" alt="Disney+">
+            </div>
+            <div class="footer__desc">
+                <p class="text-size--small" >Política de Privacidade</p>
+                <p class="text-size--small" >Proteção de Dados no Brasil</p>
+                <p class="text-size--small" >Contrato de Assinatura</p>
+                <p class="text-size--small" >Ajuda</p>
+                <p class="text-size--small" >Dispositivos compatíveis</p>
+                <p class="text-size--small" >Sobre o Disney+</p>
+                <p class="text-size--small" >Anúncios personalizados</p>
+
+                <p class="footer__adress text-size--small text-color">
+                    Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                </p>
+            </div>
+            <div class="footer__copy text-size--small text-color">
+                <p>© Disney. Todos os direitos reservados. <br>
+                    <small>cópia feita por Jhuly</small>
+                </p>
+            </div>
+    
+        </footer>
+    </div>
     <script src="./public/js/main.js"></script>
 </body>
 </html>
